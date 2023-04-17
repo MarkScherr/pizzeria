@@ -13,7 +13,6 @@ class ToppingServiceTests() {
     private val restTemplate = mock(RestTemplate::class.java)
     private val service = ToppingService(restTemplate)
 
-
     @Test
     fun testGetToppings() {
         val expectedToppings = listOf(Topping("jane@example.com", listOf("pepperoni", "mushrooms")))
